@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby file: ".ruby-version"
 
-gem "rails", "7.1.3.4"
+gem "rails", "7.1.5.2"
 gem "rake", "13.2.1"
 
 group :development do
@@ -24,7 +24,7 @@ group :development, :test do
   gem "rubocop-performance", "~> 1.21.0", require: false
   gem "rubocop-rake", "~> 0.6.0", require: false
   gem "rubocop-rails", "~> 2.26.0", require: false
-  gem "active_record_query_trace", "~> 1.8"
+  gem "active_record_query_trace", "~> 1.8", ">= 1.8.3"
   gem "shoulda-matchers", "~> 6.0"
   gem "spring", "~> 4.0"
   gem "spring-commands-rspec", "~> 1.0"
@@ -32,7 +32,7 @@ end
 
 group :test do
   gem "capybara", "~> 3.38"
-  gem "database_cleaner-active_record", "~> 2.0"
+  gem "database_cleaner-active_record", "~> 2.2", ">= 2.2.1"
   gem "database_cleaner-mongoid", "~> 2.0"
   gem "factory_bot_rails", "~> 6.4"
   gem "faker", "~> 3.1"
@@ -63,7 +63,7 @@ gem "actionpack-action_caching", "~> 1.2"
 gem "actionpack-cloudflare", "~> 1.1", group: %i[staging production] # Verify that this works after upgrading the Rails gem version
 gem "activerecord-mysql-index-hint", "~> 0.0"
 gem "active_model_otp", "~> 2.3"
-gem "after_commit_everywhere", "~> 1.3"
+gem "after_commit_everywhere", "~> 1.5", ">= 1.5.0"
 gem "alterity", "~> 1.4"
 gem "ancestry", "~> 4.2"
 gem "apple_id", "~> 1.5"
@@ -80,7 +80,7 @@ gem "bootsnap", "~> 1.15", require: false
 gem "braintree", "~> 4.9"
 gem "bugsnag", "~> 6.25"
 gem "builder", "~> 3.2"
-gem "closure_tree", "~> 7.4"
+gem "closure_tree", "~> 8.0", ">= 8.0.0"
 gem "color", "~> 1.8"
 gem "countries", "~> 6.0"
 gem "csv", "~> 3.3"
@@ -131,7 +131,7 @@ gem "omniauth-rails_csrf_protection", "~> 1.0"
 # Update to a normal release once https://github.com/isaacsanders/omniauth-stripe-connect/issues/67 is fixed
 gem "omniauth-stripe-connect", github: "isaacsanders/omniauth-stripe-connect", ref: "468dd9acaccdbba38a38cdbcdf7f10c17be25e89"
 gem "omniauth-twitter", "~> 1.4"
-gem "paper_trail", "~> 15.0"
+gem "paper_trail", "~> 15.2", ">= 15.2.0"
 gem "paypal-sdk-merchant", "~> 1.117"
 gem "paypal-checkout-sdk", "~> 1.0"
 gem "pdf-reader", "~> 2.11"
@@ -182,7 +182,7 @@ gem "sitemap_generator", "~> 6.3"
 gem "slack-notifier", "~> 2.4"
 gem "sprockets-rails", "~> 3.4", require: "sprockets/railtie"
 gem "ssrf_filter", "~> 1.2.0"
-gem "state_machines-activerecord", "~> 0.8"
+gem "state_machines-activerecord", "~> 0.10", ">= 0.10.0"
 gem "streamio-ffmpeg", "~> 3.0"
 gem "stripe", "~> 12.0"
 gem "strongbox", "~> 0.7"
@@ -198,4 +198,4 @@ gem "rouge", "~> 4.0"
 gem "ruby-openai", "~> 7.0"
 gem "anycable-rails", "~> 1.5"
 
-gem "react_on_rails", "~> 14.0"
+gem "react_on_rails", "~> 14.0", ">= 14.0.5"
